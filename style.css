@@ -1,0 +1,243 @@
+/* variable */
+
+
+/* reset */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+p,
+a,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* base styles ***************************/
+
+html {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: lightblue;
+    box-sizing: border-box;
+}
+
+.navigation {
+    width: 100%;
+    /*display: grid;
+    grid-template-columns: 60% 40%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+
+/* fonts */
+
+
+/* mobiles fonts **********************************************************
+ @@@@@@@@@@ PIXEL 2 @@@@@@@@@@
+*/
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        padding: 0 0.3rem 0 0.3rem;
+        margin-top: 6rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .header {
+        background: url(images/header_image_pixel2.png);
+        height: 100vh;
+        /* Do poprawy na PX lub REM */
+        max-width: 480px;
+    }
+    .navigation {
+        padding-top: 3rem;
+    }
+    /*.menu-button {}*/
+    .menu-btn {
+        margin-right: 10%;
+        color: #FFFFFF;
+    }
+    .menu {
+        display: none;
+    }
+    .menu-mobile {
+        /* MOBILE MENU */
+        height: 300px;
+        width: 80%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        position: absolute;
+        top: 8rem;
+        left: 10%;
+        margin: auto;
+        background-color: black;
+        border-radius: 10%;
+    }
+    .menu-mobile li {
+        padding: 0.8rem;
+    }
+    .menu-mobile li a {
+        font-size: 2 rem;
+        color: #FAFAFA;
+    }
+    .menu-mobile li:hover {}
+    .header>h2 {
+        font-size: 1.3rem;
+        margin: auto;
+        text-align: center;
+        margin-top: 10rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        color: #FFFFFF;
+    }
+    .main-btn {
+        display: block;
+        margin: auto;
+        height: 6rem;
+        width: 12rem;
+        border: 1px solid black;
+        background-color: transparent;
+        margin-top: 5rem;
+        border-radius: 5%;
+        font-size: 0.8rem;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+    }
+    .section-header {
+        font-size: 1.3rem;
+    }
+    .section-header-strong {
+        font-weight: bolder;
+    }
+    /* SECOND SECTION */
+    .sec-development {
+        background-color: #FFFFFF;
+        height: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec-development>p {
+        padding: 2rem 1rem 2rem 1rem;
+        text-align: justify;
+    }
+    .dev-img {
+        height: 130px;
+        width: 130px;
+    }
+    /* THIRDSECTION STYLES */
+    .sec-branding {
+        background-color: #FAFAFA;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30rem;
+    }
+    .sec-branding>p {
+        padding: 2rem 1rem 2rem 1rem;
+        text-align: justify;
+    }
+    /* FOURTH SECTION */
+    .sec-skills {
+        background-color: #FFFFFF;
+        opacity: 1;
+    }
+    .sec-skills:first-child {}
+    .sec-skills div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 2rem;
+    }
+    .skills-line {
+        height: 1px;
+        color: black;
+        width: 80%;
+    }
+    /* FIFTH SECTION */
+    .sec-clients {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FAFAFA;
+    }
+    .sec-clients>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 1.3rem;
+        text-align: center;
+    }
+    .sec-clients>div>figure>img {
+        height: 8rem;
+    }
+    /* SIXTH SECTION */
+    .sec-team {
+        background-color: #111111;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+    .sec-team>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /*padding-bottom: 2rem; zrobic aby tylko dolny padding mial 2rem */
+    }
+    .sec-team>div>figure>img {
+        height: 8rem;
+        border: 3px solid white;
+        border-radius: 50%;
+    }
+    .sec-team>h2 {
+        color: #FFFFFF;
+    }
+    .facebook,
+    .twitter,
+    .google-plus {
+        height: 1.2rem;
+        margin: 0.8rem;
+    }
+    .social-media {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+}
+
+
+/* small tablets fonts */
