@@ -32,7 +32,6 @@ html {
 }
 
 body {
-    background-color: lightblue;
     box-sizing: border-box;
 }
 
@@ -57,8 +56,8 @@ h1 {
  @@@@@@@@@@ PIXEL 2 @@@@@@@@@@
 */
 
-@media only screen and (max-width: 480px) {
-    h1 {
+@media only screen and (max-width: 1480px) {
+    .main-header {
         padding: 0 0.3rem 0 0.3rem;
         margin-top: 6rem;
         font-size: 2rem;
@@ -105,7 +104,6 @@ h1 {
         font-size: 2 rem;
         color: #FAFAFA;
     }
-    .menu-mobile li:hover {}
     .header>h2 {
         font-size: 1.3rem;
         margin: auto;
@@ -128,24 +126,26 @@ h1 {
         border-color: #FFFFFF;
         color: #FFFFFF;
     }
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .section-header {
         font-size: 1.3rem;
     }
     .section-header-strong {
         font-weight: bolder;
     }
+    .section-paragraph {
+        padding: 2rem 1rem 2rem 1rem;
+        text-align: center;
+    }
     /* SECOND SECTION */
     .sec-development {
         background-color: #FFFFFF;
         height: 30rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .sec-development>p {
-        padding: 2rem 1rem 2rem 1rem;
-        text-align: justify;
     }
     .dev-img {
         height: 130px;
@@ -154,89 +154,144 @@ h1 {
     /* THIRDSECTION STYLES */
     .sec-branding {
         background-color: #FAFAFA;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         height: 30rem;
     }
-    .sec-branding>p {
-        padding: 2rem 1rem 2rem 1rem;
-        text-align: justify;
-    }
-    /* FOURTH SECTION */
-    .sec-skills {
-        background-color: #FFFFFF;
-        opacity: 1;
-    }
-    .sec-skills:first-child {}
-    .sec-skills div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding-top: 2rem;
-    }
-    .skills-line {
-        height: 1px;
-        color: black;
-        width: 80%;
-    }
-    /* FIFTH SECTION */
-    .sec-clients {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #FAFAFA;
-    }
-    .sec-clients>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 1.3rem;
-        text-align: center;
-    }
-    .sec-clients>div>figure>img {
-        height: 8rem;
-    }
-    /* SIXTH SECTION */
-    .sec-team {
-        background-color: #111111;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-    }
-    .sec-team>div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        /*padding-bottom: 2rem; zrobic aby tylko dolny padding mial 2rem */
-    }
-    .sec-team>div>figure>img {
-        height: 8rem;
-        border: 3px solid white;
-        border-radius: 50%;
-    }
-    .sec-team>h2 {
-        color: #FFFFFF;
-    }
-    .facebook,
-    .twitter,
-    .google-plus {
-        height: 1.2rem;
-        margin: 0.8rem;
-    }
-    .social-media {
-        display: inline-block;
-        padding: 0.5rem;
-    }
+}
+
+
+/* FOURTH SECTION */
+
+.sec-skills {
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+.sec-skills div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.skills-paragraph {
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.skills-line {
+    height: 1px;
+    color: black;
+    width: 80%;
+}
+
+
+/* FIFTH SECTION */
+
+.sec-clients {
+    background-color: #FAFAFA;
+}
+
+.sec-clients>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1.3rem;
+    text-align: center;
+}
+
+.sec-clients>div>figure>img {
+    height: 8rem;
+}
+
+
+/* SIXTH SECTION */
+
+.sec-team {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+.sec-team>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*padding-bottom: 2rem; zrobic aby tylko dolny padding mial 2rem */
+}
+
+.sec-team>div>figure>img {
+    height: 8rem;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.facebook,
+.twitter,
+.google-plus,
+.mobile {
+    height: 1.2rem;
+    margin: 0.8rem;
+}
+
+.social-media {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+
+/* SEVENTH SECTION */
+
+.sec-form {
+    text-align: center;
+    background-color: #7690C5;
+    color: #FFFFFF;
+}
+
+.sec-form>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec-form>ul>li {
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.contact-link {
+    color: #FFFFFF;
+}
+
+.input-form {
+    height: 3rem;
+    width: 80%;
+    margin-bottom: 1.5rem;
+    -webkit-box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 8px 12px 5px 0px rgba(0, 0, 0, 0.13);
+    border: 1px solid lightgray;
+    border-radius: 2%;
+}
+
+.area-form {
+    height: 6rem;
+}
+
+.form-end-line {
+    height: 0.1rem;
+    width: 90%;
+    color: #FFFFFF;
+}
+
+.footer {
+    background-color: #7690C5;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 
