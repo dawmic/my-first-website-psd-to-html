@@ -74,6 +74,7 @@ h1 {
     .menu-btn {
         margin-right: 10%;
         color: #FFFFFF;
+        background: transparent;
     }
     .menu {
         display: none;
