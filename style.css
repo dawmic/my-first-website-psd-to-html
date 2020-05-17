@@ -324,3 +324,29 @@ h1 {
         width: 60%;
     }
 }
+
+
+/* laptops */
+
+@media only screen and (min-width: 801px) {
+    html {
+        font-size: 18px;
+    }
+    .input-form {
+        width: 40%;
+    }
+    .menu-btn {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .menu li {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+    .menu li a {
+        color: #FFFFFF;
+    }
+}
