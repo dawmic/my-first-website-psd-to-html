@@ -54,103 +54,127 @@ h1 {
  @@@@@@@@@@ PIXEL 2 @@@@@@@@@@
 */
 
-@media only screen and (max-width: 480px) {
-    .main-header {
-        padding: 0 0.3rem 0 0.3rem;
-        margin-top: 6rem;
-        font-size: 2rem;
-        text-align: center;
-    }
-    .header {
-        background: url(images/header_image_pixel2.png);
-        height: 100vh;
-        /* Do poprawy na PX lub REM */
-        max-width: 480px;
-    }
-    .navigation {
-        padding-top: 3rem;
-    }
-    /*.menu-button {}*/
-    .menu {
-        display: none;
-    }
-    .menu-mobile {
-        height: 100%;
-        width: 40%;
-        background-color: #FAFAFAFA;
-        opacity: 0.9;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        position: absolute;
-        top: 0;
-        right: 0%;
-        margin: auto;
-    }
-    .menu-mobile li {
-        padding: 0.8rem;
-    }
-    .menu-mobile li a {
-        font-size: 2 rem;
-        color: #111111;
-    }
-    .menu-mobile li a:hover {
-        font-size: 2.1rem;
-    }
-    .header>h2 {
-        font-size: 1.3rem;
-        margin: auto;
-        text-align: center;
-        margin-top: 10rem;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-        color: #FFFFFF;
-    }
-    .main-btn {
-        display: block;
-        margin: auto;
-        height: 6rem;
-        width: 12rem;
-        border: 1px solid black;
-        background-color: transparent;
-        margin-top: 5rem;
-        border-radius: 5%;
-        font-size: 0.8rem;
-        border-color: #FFFFFF;
-        color: #FFFFFF;
-    }
-    .section-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .section-header {
-        font-size: 1.3rem;
-    }
-    .section-header-strong {
-        font-weight: bolder;
-    }
-    .section-paragraph {
-        padding: 2rem 1rem 2rem 1rem;
-        text-align: center;
-    }
-    /* SECOND SECTION */
-    .sec-development {
-        background-color: #FFFFFF;
-        height: 30rem;
-    }
-    .dev-img {
-        height: 130px;
-        width: 130px;
-    }
-    /* THIRDSECTION STYLES */
-    .sec-branding {
-        background-color: #FAFAFA;
-        height: 30rem;
-    }
+
+/*@media only screen and (max-width: 480px) { */
+
+.main-header {
+    padding: 0 0.3rem 0 0.3rem;
+    margin-top: 6rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.header {
+    background: url(images/header_image_pixel2.png);
+    height: 100vh;
+    /* Do poprawy na PX lub REM */
+    max-width: 1480px;
+}
+
+.navigation {
+    padding-top: 3rem;
+}
+
+
+/*.menu-button {}*/
+
+.menu {
+    display: none;
+}
+
+.menu-mobile {
+    height: 100%;
+    width: 40%;
+    background-color: #FAFAFAFA;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    margin: auto;
+}
+
+.menu-mobile li {
+    padding: 0.8rem;
+}
+
+.menu-mobile li a {
+    font-size: 1.2rem;
+    color: #111111;
+    background: transparent;
+}
+
+.menu-mobile li a:hover {
+    font-size: 1.4rem;
+}
+
+.header>h2 {
+    font-size: 1.3rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 10rem;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    color: #FFFFFF;
+}
+
+.main-btn {
+    display: block;
+    margin: auto;
+    height: 6rem;
+    width: 12rem;
+    border: 1px solid black;
+    background-color: transparent;
+    margin-top: 5rem;
+    border-radius: 5%;
+    font-size: 0.8rem;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-header {
+    font-size: 1.3rem;
+}
+
+.section-header-strong {
+    font-weight: bolder;
+}
+
+.section-paragraph {
+    padding: 2rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+
+/* SECOND SECTION */
+
+.sec-development {
+    background-color: #FFFFFF;
+    height: 30rem;
+}
+
+.dev-img {
+    height: 130px;
+    width: 130px;
+}
+
+
+/* THIRDSECTION STYLES */
+
+.sec-branding {
+    background-color: #FAFAFA;
+    height: 30rem;
 }
 
 
@@ -291,3 +315,12 @@ h1 {
 
 
 /* small tablets fonts */
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    html {
+        font-size: 17px;
+    }
+    .input-form {
+        width: 60%;
+    }
+}
