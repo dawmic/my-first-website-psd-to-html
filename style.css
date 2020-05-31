@@ -303,6 +303,15 @@ h1 {
     height: 6rem;
 }
 
+.sec-form>ul li {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.sec-form>ul li a img {
+    margin: 0;
+}
+
 .form-end-line {
     height: 0.1rem;
     width: 90%;
@@ -335,7 +344,7 @@ h1 {
         font-size: 18px;
     }
     .input-form {
-        width: 40%;
+        /* width: 40%;  ZMIENIONA SZEROKOSC INPUTA*/
     }
     .menu-btn {
         display: none;
@@ -370,6 +379,12 @@ h1 {
 @media only screen and (min-width: 1001px) {
     .header {
         height: 900px;
+    }
+    .main-header {
+        font-size: 2.6rem;
+    }
+    .header>h2 {
+        font-size: 2.3rem;
     }
     .sec-development {
         display: grid;
@@ -431,7 +446,8 @@ h1 {
         grid-template-rows: repeat(6, 1fr);
         grid-column-gap: 0;
         grid-row-gap: 4rem;
-        ;
+        justify-items: center;
+        height: 800px;
     }
     .sec-skills div {
         display: grid;
@@ -440,8 +456,8 @@ h1 {
         gap: 1px 1px;
         grid-template-areas: "div1 div2" "div1 div3";
         height: 10rem;
-        border: 1px solid black;
-        max-width: 500px;
+        min-width: 460px;
+        max-width: 800px;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -463,6 +479,109 @@ h1 {
         text-align: left;
     }
     .skills-line {
+        display: none;
+    }
+    .sec-clients {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.3fr 0.4fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "header2 header2 header2 header2" "header3 header3 header3 header3" "jamie jamie bart bart";
+        justify-items: center;
+    }
+    .sec-clients>h2 {
+        font-size: 2.5rem;
+        grid-area: header2;
+    }
+    .sec-clients>h3 {
+        font-size: 1.8rem;
+        grid-area: header3;
+        padding-bottom: 5rem;
+    }
+    .sec-clients div figure img {
+        width: 200px;
+        height: 200px;
+    }
+    .container-jamie {
+        grid-area: jamie;
+        margin-bottom: 5rem;
+        width: 400px;
+        margin-left: 20%;
+    }
+    .container-bart {
+        grid-area: bart;
+        margin-bottom: 5rem;
+        width: 400px;
+        margin-right: 20%;
+    }
+    .sec-team {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.7fr 0.7fr 1.6fr;
+        gap: 1px 1px;
+        grid-template-areas: "header2 header2 header2" "header3 header3 header3" "kimberly rico uku";
+        justify-items: center;
+    }
+    .sec-team>h2 {
+        font-size: 2.5rem;
+        grid-area: header2;
+    }
+    .sec-team>h3 {
+        font-size: 1.8rem;
+        grid-area: header3;
+        padding-bottom: 5rem;
+    }
+    .sec-team div figure img {
+        height: 200px;
+        width: 200px;
+    }
+    .container-kimberly {
+        grid-area: kimberly;
+        margin-bottom: 5rem;
+        margin-left: 30%;
+    }
+    .container-rico {
+        grid-area: rico;
+        margin-bottom: 5rem;
+    }
+    .container-uku {
+        grid-area: uku;
+        margin-bottom: 5rem;
+        margin-right: 30%;
+    }
+    .sec-form {
+        display: grid;
+        grid-template-columns: 0.7fr 1fr;
+        grid-template-rows: 0.5fr 0.7fr 1fr;
+        gap: 1px 1px;
+        grid-template-areas: "form-header form" "form-para form" "form-list form";
+        justify-items: center;
+    }
+    .sec-form>h2 {
+        grid-area: form-header;
+        font-size: 2.5rem;
+        margin-left: 20%;
+    }
+    .sec-form>p {
+        grid-area: form-para;
+        margin-left: 20%;
+    }
+    .sec-form>ul {
+        grid-area: form-list;
+        display: block;
+        margin-left: 20%;
+    }
+    .sec-form>ul li {
+        text-align: left;
+    }
+    .sec-form>ul li a img {
+        margin: 0;
+        padding-right: 1rem;
+    }
+    .sec-form>form {
+        grid-area: form;
+    }
+    .form-end-line {
         display: none;
     }
 }
