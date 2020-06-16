@@ -131,7 +131,7 @@ h1 {
     font-size: 0.8rem;
     border-color: #FFFFFF;
     color: #FFFFFF;
-    transition: border-width 0.3s linear;
+    transition: border-width 0.1s linear;
     outline: none;
 }
 
@@ -367,7 +367,7 @@ h3 {
     }
     .menu li a {
         color: #FFFFFF;
-        transition: 0.4s linear;
+        transition: 0.1s linear;
     }
     .menu li a:hover {
         font-size: 1.1rem;
