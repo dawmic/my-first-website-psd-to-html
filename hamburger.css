@@ -3,7 +3,8 @@
     height: 30px;
     margin: 10px 10px;
     position: absolute;
-    top: 4rem;
+    /*top: 4rem;*/
+    top: 1rem;
     right: 10%;
     cursor: pointer;
     margin: auto;

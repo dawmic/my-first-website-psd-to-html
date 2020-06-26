@@ -72,7 +72,13 @@ h1 {
 }
 
 .navigation {
-    padding-top: 3rem;
+    /*padding-top: 3rem; */
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .menu {
@@ -83,6 +89,7 @@ h1 {
     height: 100vh;
     width: 100%;
     background-color: #FAFAFAFA;
+    animation: showMenu 2s;
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -113,9 +120,10 @@ h1 {
     font-size: 1.3rem;
     margin: auto;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: 4rem;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
+    padding-top: 10rem;
     color: #FFFFFF;
 }
 
@@ -329,6 +337,7 @@ h3 {
     background-color: #7690C5;
     text-align: center;
     color: #FFFFFF;
+    padding-bottom: 1rem;
 }
 
 
@@ -353,6 +362,15 @@ h3 {
     .input-form {
         /* width: 40%;  ZMIENIONA SZEROKOSC INPUTA*/
     }
+    .navigation {
+        /*
+        position: sticky;
+        width: 100%;
+        left: 0;
+        top: 0;
+        padding-top: 0;
+        z-index: 10000;  */
+    }
     .menu-btn {
         display: none;
     }
@@ -369,8 +387,9 @@ h3 {
         color: #FFFFFF;
         transition: 0.1s linear;
     }
-    .menu li a:hover {
-        font-size: 1.1rem;
+    .menu li a:hover {}
+    .main-btn {
+        font-size: 1rem;
     }
     .section-header {
         font-size: 1.8rem;
@@ -590,5 +609,17 @@ h3 {
     }
     .form-end-line {
         display: none;
+    }
+}
+
+
+/* ANIMATION */
+
+@keyframes showMenu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
     }
 }
