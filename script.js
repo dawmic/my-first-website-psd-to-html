@@ -19,11 +19,26 @@ const navi = document.querySelector('.navigation');
 
 const menuLinks = document.querySelectorAll('.menuLink');
 
-menuLinks.forEach(x => {
-    x.addEventListener('click', () => {
+menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
         console.log('click');
         document.querySelector('.menu').classList.remove('menu-mobile');
         document.querySelector('.icon').classList.remove('open');
 
     })
 })
+
+
+const header = document.querySelector('header');
+const nav = document.querySelector('.navigation');
+
+function skrol() {
+    if (window.scrollY > 500) {
+        nav.classList.add('floatNav');
+
+    } else {
+        nav.classList.remove('floatNav');
+    }
+}
+
+setInterval(skrol, 500);
